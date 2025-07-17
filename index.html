@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Souvik Sen - Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="images/photo_2025-07-16_21-38-41.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      line-height: 1.6;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      background: #111;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 1rem 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #00f5c3;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    header {
+      padding: 3rem 2rem;
+      text-align: center;
+      background: rgba(0,0,0,0.5);
+      animation: fadeIn 1s ease-in;
+    }
+    header img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #00f5c3;
+      margin-bottom: 1rem;
+      box-shadow: 0 0 15px #00f5c3;
+      transition: transform 0.3s ease;
+    }
+    header img:hover {
+      transform: scale(1.05);
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid #00f5c3;
+      display: block;
+      text-align: center;
+      padding-bottom: 0.5rem;
+    }
+    .skills ul {
+      list-style: none;
+      padding-left: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .skills li {
+      background: rgba(255,255,255,0.05);
+      padding: 0.8rem 1rem;
+      border-left: 4px solid #00f5c3;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      border-radius: 8px;
+    }
+    .skills img {
+      width: 24px;
+      height: 24px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      justify-items: center;
+    }
+    .image-link {
+      display: block;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 245, 195, 0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+      width: 100%;
+      max-width: 400px;
+    }
+    .image-link img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      display: block;
+    }
+    .image-link:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 25px rgba(0, 245, 195, 0.5);
+    }
+    .caption {
+      padding: 0.5rem;
+      text-align: center;
+      background: #00000055;
+      font-size: 0.95rem;
+      color: #ddd;
+      text-decoration: none;
+    }
+    .contact a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.7rem 1.2rem;
+      background: #00f5c3;
+      color: #000;
+      text-decoration: none;
+      border-radius: 25px;
+      transition: transform 0.3s ease;
+    }
+    .contact a img {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 6px;
+    }
+    .contact a:hover {
+      transform: scale(1.1);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #aaa;
+      background: #111;
+      position: relative;
+    }
+    .footer-contact {
+      position: absolute;
+      bottom: 2rem;
+      left: 2rem;
+      font-size: 0.85rem;
+      color: #ccc;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <img src="/images/photo_2025-07-16_21-40-46.png" alt="Souvik Sen Profile Photo">
+    <h1>Souvik Sen</h1>
+    <p>Competitive Programmer | Lifelong Learner</p>
+    <p>Always Improving | Problem Solver</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I’m Souvik, a passionate coder with an ambitious goal: to become a Grandmaster on Codeforces. I've already completed half of my C++ course, and with every line of code, I discover more reasons why this journey excites me. Solving algorithmic problems, understanding computational logic, and constantly challenging myself through competitions is what fuels my passion. I believe learning by doing, and that belief drives me every day to push further.</p>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li><img src="/images/C++.png" alt="C++"> C++ (Fluent)</li>
+      <li><img src="/images/C.png" alt="C"> C (Basic)</li>
+      <li><img src="/images/Python.png" alt="Python"> Python (Beginner)</li>
+      <li><img src="/images/Java.png" alt="Java"> Java (Beginner)</li>
+      <li><img src="/images/HTML and CSS.png" alt="HTML"> HTML & CSS (Intermediate)</li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="grid">
+      <div class="image-link">
+        <img src="/images/Daffodil.jpg" alt="Daffodil International University">
+        <div class="caption">Daffodil International University – Pursuing B.Sc. in CSE with strong focus on competitive programming and software engineering.</div>
+      </div>
+      <div class="image-link">
+        <img src="/images/City College.jpg" alt="Government City College">
+        <div class="caption">Government City College – Completed Higher Secondary Certificate with CGPA 5.00, majoring in science and mathematics.</div>
+      </div>
+      <div class="image-link">
+        <img src="/images/Govt. High.jpg" alt="Chittagong Government High School">
+        <div class="caption">Chittagong Government High School – Built my foundational knowledge and passion for logical thinking and computers.</div>
+      </div>
+    </div>
+  </section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+    <a href="https://github.com/JirayaKnows/InventoryManagement" target="_blank" class="image-link">
+      <img src="/images/Inventory.jpg" alt="Inventory Management System">
+      <div class="caption">Inventory Management System – A user-friendly tool built with C++ for tracking stock, products, and supplies efficiently.</div>
+    </a>
+    <a href="https://github.com/JirayaKnows/Hospital-Management-System" target="_blank" class="image-link">
+      <img src="/images/Hospital.jpg" alt="Hospital Management System">
+      <div class="caption">Hospital Management System – Designed a simplified hospital record system using Python and SQL Workbench to handle patients, appointments, and billing.</div>
+    </a>
+  </div>
+</section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <a href="https://github.com/JirayaKnows" target="_blank"><img src="/images/github.png" alt="GitHub Icon"> GitHub</a>
+    <a href="https://www.linkedin.com/in/souvik-sen-6b864b341" target="_blank"><img src="/images/317750_linkedin_icon.png" alt="LinkedIn Icon"> LinkedIn</a>
+    <a href="https://www.facebook.com/share/1B2BaQkMqM/" target="_blank"><img src="/images/facebook.png" alt="Facebook Icon"> Facebook</a>
+    <a href="https://www.instagram.com/barely_souvik" target="_blank"><img src="/images/10900019.png" alt="Instagram Icon"> Instagram</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Souvik Sen. All rights reserved.
+    <div class="footer-contact">
+      📧 theerosanninjiraya@gmail.com<br>
+      📞 +8801817318002
+    </div>
+  </footer>
+</body>
+</html>
